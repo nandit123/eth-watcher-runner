@@ -101,7 +101,7 @@ def main():
         # events
         # TODO get from config
         system("docker-compose exec contact-watcher-db sh -c \"psql -U vdbm -d vulcanize_public -c \\\"INSERT INTO "
-               "contract.events(name) VALUES ('MessageChanged') ON CONFLICT DO NOTHING;\\\"\"")
+               "contract.events(name) VALUES ('StorageRequest') ON CONFLICT DO NOTHING;\\\"\"")
         # copy sql file
         fp = open("a.sql", "w")
         fp.write(str("INSERT INTO contract.contracts (name, address, abi, events, starting_block) VALUES ('" +

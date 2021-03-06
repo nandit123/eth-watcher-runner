@@ -1,11 +1,21 @@
 [contract]
     # file names without .sol extention
     contracts  = [
-        "Test",
+        # "Test", "FPS"
+        "FPS"
     ]
-    [contract.Test]
+
+    #[contract.Test]
         # contract name
-        name = "Test"
+      #  name = "Test"
+        # eventName = "MessageChanged"
+        # constuctor parameters
+#        paremeters = [1, 2, 3]
+
+    [contract.FPS]
+        # contract name
+        name = "FPS"
+        # eventName = "StorageRequest"
         # constuctor parameters
 #        paremeters = [1, 2, 3]
 
